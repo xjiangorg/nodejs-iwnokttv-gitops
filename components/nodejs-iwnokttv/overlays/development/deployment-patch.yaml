@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/quay_xjiang/nodejs-iwnokttv:7143afadf41ac093e6fe4d12129bfda2b1d261b1@sha256:abf5f3e3f17796cba3ed3120060a0882687153d219b4b73b3359fbcb750880c8
+        - image: quay.io/quay_xjiang/nodejs-iwnokttv:5a710365cad0a7cbffd5c29d0deeca357559aaa1@sha256:61a35bcae951ecaa6ff1712a9c38e743637ff2536bbdaac30e37698330311b6f
           name: container-image
