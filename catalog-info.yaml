@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nodejs-iwnokttv-gitops
+  description: This is GitOps manifest for nodejs-iwnokttv   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=nodejs-iwnokttv
+    backstage.io/kubernetes-id: nodejs-iwnokttv 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: nodejs-iwnokttv
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:nodejs-iwnokttv
